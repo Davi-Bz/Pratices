@@ -1,2 +1,3 @@
-# Pratices
- first pratices in cpp with simple exercises.
+# Pratices.
+
+repositoy created to show the firsts pratices in cpp with simple exercises.
