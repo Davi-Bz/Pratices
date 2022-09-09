@@ -1,5 +1,4 @@
 
-// Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro Carro
 
 #include <iostream>
 #include <vector>
