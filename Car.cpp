@@ -8,7 +8,7 @@ using namespace std;
 
 struct Carro{
     int pass {0};
-    int pass_max {2};
+    int pass_max {5};
     int gas {0};
     int gas_max {100};
     int km {0};
