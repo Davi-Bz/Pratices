@@ -61,19 +61,8 @@ struct Carro{
 
 };
 
-/*
-    $end
-    $enter
-    $leave
-    $fuel
-    $drive
-    $show
-    */
-
-int main(){
-    Carro car;
-   
-
+void comand (Carro car){
+    
     while(true){
         string cmd { };
         cin>> cmd;
@@ -92,14 +81,12 @@ int main(){
 
         } else if(cmd == "fuel"){       // insert fuel on the tank of the car (max = 100)
             int gs {0}; 
-            cout<<"How much liters of gasoline? \n";
             cin>> gs;
             car.fuel(gs);
             car.show();
 
         } else if(cmd == "drive"){      // drive the car (loses fuel equal the km )
             int dr { };
-            cout<<"drive how many kilometers?\n";
             cin>>dr;
             car.drive(dr);
             car.show();
@@ -107,4 +94,19 @@ int main(){
             cout<<"fail: invalid comand\n";
         }
     }
+}
+
+/*
+    $end
+    $enter
+    $leave
+    $fuel
+    $drive
+    */
+
+int main(){
+    Carro car;
+    
+    comand(car);
+
 }

@@ -81,14 +81,10 @@ struct Calc {
 
         cout<< "display = " << sf << sp << (float)display << ", battery = " << battery << endl;
     }
-
 };
 
-int main(){
-    Calc calc;
-
-
-   while(true){
+ void comand(Calc calc){
+         while(true){
     string cmd;
     cin>> cmd;
 
@@ -141,4 +137,11 @@ int main(){
         cout<<"comando invalido\n";
     }
    }
+  }
+
+int main(){
+    Calc calc;
+
+    comand(calc);
+  
 }
