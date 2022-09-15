@@ -44,6 +44,9 @@ struct Carro{
     void drive(int dtc){             //drives equal to value in parameter
         if(pass == 0)
             cout<<"fail: there's no one in the car\n";
+
+        else if(gas == 0)
+            cout<<"fail: there's no fuel in the car\n";
         else if(dtc > gas){
             cout<<"fail: empty tank after driving " << gas << " km\n";
             km += gas;
